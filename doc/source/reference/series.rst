@@ -45,7 +45,6 @@ Attributes
    Series.dtypes
    Series.ftypes
    Series.data
-   Series.is_copy
    Series.name
    Series.put
 
@@ -148,8 +147,6 @@ Computations / descriptive stats
    Series.autocorr
    Series.between
    Series.clip
-   Series.clip_lower
-   Series.clip_upper
    Series.corr
    Series.count
    Series.cov
@@ -529,6 +526,19 @@ Sparse-dtype specific methods and attributes are provided under the
 
    Series.sparse.from_coo
    Series.sparse.to_coo
+
+
+.. _api.series.metadata:
+
+Metadata
+~~~~~~~~
+
+:attr:`Series.attrs` is a dictionary for storing global metadata for this Series.
+
+.. autosummary::
+   :toctree: api/
+
+   Series.attrs
 
 
 Plotting
